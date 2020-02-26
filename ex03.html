@@ -23,6 +23,19 @@
        var isWeekend = true;
        var needShower = !isWeekend;
        console.log(needShower);
+
+       // combine logical operators
+       var weekend = false, 
+            hadShower = true,
+            hadApple = false,
+            hadOrange = true;
+        var shouldIGo2School = !weekend && hadShower && (hadApple || hadOrange); // is not weekend AND I had a shower AND I ate an apple and/or an orange.
+        console.log("Should I got ot school today? ", shouldIGo2School);
+
+        // compating numbers with booleans
+        var height = 50;
+        var heightRestriction = 48;
+        console.log(height <= heightRestriction);
         
     </script>
 </head>
