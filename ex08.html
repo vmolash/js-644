@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - 07 Array</title>
+
+    <script>
+        // concatenate(ambine) arrays
+        var fuzzyAnimals = ["Bunny", "Alpaca", "Lemur", "Sheep"];
+        var scalyAnimals = ["Snake", "Armadillo", "Croc", "Fish"];
+        var fuzScale = fuzzyAnimals.concat(scalyAnimals);
+        console.log(fuzzyAnimals, scalyAnimals, fuzScale);
+
+        var featheryAnimals = ["Macaw", "Dodo", "Hawk"];
+        var allAnimals = scalyAnimals.concat(fuzzyAnimals, featheryAnimals);
+        console.log(scalyAnimals.concat(fuzzyAnimals, featheryAnimals));
+        console.log(allAnimals);
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
