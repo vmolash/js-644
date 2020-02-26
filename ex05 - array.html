@@ -24,11 +24,17 @@
         dinos[1] = "Velociraptor";
         dinos[2] = "Steggie";
         dinos[3] = 600;
-        dinos[6] = "Apatosaurus";
+        dinos[4] = "Apatosaurus";
 
         // nested arrays
-        var favDinos = [3, "dinosaurs", ["t-rex", "steggie", "triceratops", 400], "ancient"];
+        var favDinos = [3, "dinosaurs", ["t-rex", "steggie", "triceratops", 400], "ancient", dinos];
         console.log(favDinos[2][1]);
+        console.log(favDinos[4][1]);
+
+
+        // working with array properties and methods
+        console.log(dinos.length);- 
+        console.log(dinos[dinos.length - 1]);
     </script>
 </head>
 <body>
