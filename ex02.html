@@ -31,14 +31,16 @@
         var newSt = messyString.slice(0,1).toUpperCase() + messyString.slice(1).toLowerCase();
         console.log(newSt);
 
-        // Emily's aproach 
+        // Emily's aproach 1
         var lowerCase = messyString.toLowerCase();
         var char1 = lowerCase[0];
         var char1Upper = char1.toUpperCase();
         var restOfString = lowerCase.slice(1); // get from index 1 (2nd character) and on
         console.log(char1Upper + restOfString);
 
-        console.log(messyString[0].toUpperCase() + messyString.slice(1).toLowerCase());
+        // Emily's aproach 2
+        var cleanString = messyString[0].toUpperCase() + messyString.slice(1).toLowerCase()
+        console.log(cleanString);
         
     </script>
 </head>
