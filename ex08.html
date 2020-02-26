@@ -9,9 +9,25 @@
     <script>
        // getting the index of an array
        var colors = ["blue", 'green', 'yellow'];
+       console.log(colors.indexOf('blue'));
 
        // turn an array into a string
        console.log(colors.join(" "));
+
+       var myNums = [1,22,48,3];
+       console.log(myNums.join(", "));
+
+       var landmarks = [];
+       landmarks.push('My house');
+       landmarks.push('Big orange tree');
+       landmarks.push('Leaky fire hydrant');
+       landmarks.push('Mini mart');
+       landmarks.push("Playground");
+       landmarks.push("Pig farm");
+       landmarks.push('Friend\'s house');
+       console.log(landmarks.join(" ~ "));
+
+       console.log(landmarks.pop());
     </script>
 </head>
 <body>
