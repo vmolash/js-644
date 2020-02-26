@@ -15,7 +15,31 @@
         var sentence = cw1 + " " + cw2 + " " + cw3 + cw4[0];
         var newWord = cw1[1] + cw2[1] + cw3[1] + cw4[1];
         console.log(sentence);
+        console.log(sentence.length);
         console.log(newWord);
+
+        // slicing up a string
+        var myLongString = "My long string is long.";
+        console.log(myLongString, myLongString.length);
+        var newString = myLongString.slice(3, 14);
+        console.log(newString);
+
+        // try in console:
+        console.log(myLongString.toUpperCase(myLongString[3]));
+
+        var messyString = "hELlo THERE, hOW ARE yOu doING?";
+        var newSt = messyString.slice(0,1).toUpperCase() + messyString.slice(1).toLowerCase();
+        console.log(newSt);
+
+        // Emily's aproach 
+        var lowerCase = messyString.toLowerCase();
+        var char1 = lowerCase[0];
+        var char1Upper = char1.toUpperCase();
+        var restOfString = lowerCase.slice(1); // get from index 1 (2nd character) and on
+        console.log(char1Upper + restOfString);
+
+        console.log(messyString[0].toUpperCase() + messyString.slice(1).toLowerCase());
+        
     </script>
 </head>
 <body>
