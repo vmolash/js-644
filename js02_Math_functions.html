@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math functions</title>
+
+    <script>
+        Math.random(); // give us a random number between 0 and .9999
+        Math.random()*10; // give us a whole number (with lots of decimals), we get anywhere from 0-9
+        Math.floor(); //round down to closest whloe number
+        console.log(Math.floor(Math.random()*10));
+
+        var randomWords = ["dog", 'cave', 'turtle', 'rock', 'princess', 'pencil', 'mouse'];
+        var randomIndex = Math.floor(Math.random() * 5);
+
+        console.log(randomWords[randomIndex]);
+
+        console.log(randomWords[ Math.floor(Math.random() * randomWords.length) ] );
+
+        var phrases = [
+            "Sounds good!",
+            "Not today.",
+            "I don't like it.",
+            "That's special",
+            "Maybe...",
+            "Should I have another milkshake?"
+        ];
+        alert(phrases[Math.floor(Math.random() * phrases.length)]);
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    
+</body>
+</html>
