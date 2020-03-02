@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math functions, generate nice phrases</title>
+    <!-- THis version is interaction with the user -->
 
     <script>
        var randomBodyParts = ['face', 'Big toe', 'smile', 'Left leg'];
@@ -13,9 +14,18 @@
         var bp = randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
         var a = randomAdjs[Math.floor(Math.random() * randomAdjs.length)];
         var w = randomWords[Math.floor(Math.random() * randomWords.length)];
+        var userName = prompt("Enter your name");
+
+        var randomPhrase = [userName, "says that your", bp, "is like a very ", a, w, "!"].join(' ');
 
         
-        console.log( "Your " + bp + " is like a very " + a + " " + w + "!");
+        // console.log(userName + "says that your" + bp + "is like a very " + a + w + "!" );
+
+        console.log(randomPhrase);
+
+
+    
+
 
     </script>
 </head>
