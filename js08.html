@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    
+
+</head>
+<body>
+    
+
+    <script>
+        function multiply(a,b) {
+            var result = a*b;
+            console.log(result);
+            return result;
+        }
+
+        multiply(3, 17); // calling the function
+
+        var multiplied = multiply(3,4); // assigning value of function to a variable
+
+        var divide = function() { // anonymous function
+            var result = 3/4; // local variable
+            console.log('3 divided by 4 is ', result);
+        }
+
+        divide();
+
+        // IIFE's (immediatlye invoked function expression)
+        (function(){
+            var result = 12 / .75;
+            console.log("12 divided by .75 is ", result);
+        }())
+    </script>
+</body>
+</html>
