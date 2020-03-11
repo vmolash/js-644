@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+
+    <script>
+       var hangWords = ['monkey', 'telephone', 'zinnia', 'mango', 'toad'];
+       // get a random word from our list
+       var randomWord = hangWords[Math.floor(Math.random()*hangWords.length)];
+       var answerArray = []; // will store the player answers
+       for(var i = 0; i < randomWord.length; i++) {
+           answerArray[i] = '_';
+       }
+
+       var lettersRemaining = randomWord.length;
+       while(lettersRemaining > 0) {
+           alert(answerArray.join(' ')); // display the players progress
+
+           // get the players guess
+           var playerGuess = prompt('Guess a letter, or click cancel to stop playing.');
+           if(playerGuess === null) {
+                break; // press cancel to make this break work
+           } else if (playerGuess.length !== 1) {
+                alert('Enter a single letter');
+           } else {
+               playerGuess = playerGuess.toLowerCase();
+               for(var j = 0; j < randomWord.length; j ++) {
+                   if (randomWord[j] === playerGuess) {
+                    // break; // gets out only current loop
+                       answerArray[j] = playerGuess;
+                       lettersRemaining--;
+                   }
+               }
+           }
+       }
+       alert(answerArray.join(' '));
+       alert('Good job, the answer was ' + randomWord);
+        console.log(randomWord);
+
+        /*
+            pick a random word
+            while the word has not been guessed {
+                show progress
+                make another guess
+
+                if they want to quit they can exit
+            }
+            check to see if they entered 1 letter,
+             if not, tell them to pick single letter
+
+            else 
+                if the guess is the word
+                update the players progress and congratulate 
+        */
+    </script>
+</head>
+<body>
+    <h1>Hangman</h1>
+</body>
+</html>

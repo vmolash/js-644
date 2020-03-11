@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Conditionals = for loop</title>
+
+    <script>
+        var letters = 'abcdefghijklmnopqrstuvwxyz';
+        var randomLetters = '';
+        var letterLength = 6;
+
+        for(var i = 0; i < letterLength; i++) {
+            randomLetters += letters[Math.floor(Math.random()* letters.length)];
+            console.log(randomLetters);
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
