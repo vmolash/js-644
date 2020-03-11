@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+
+    <script>
+        var dog = {
+            "name": "skippy",
+            "legs": 3,
+            "color": "white",
+            "playful": true
+        };
+        var cat = {
+            name: "Spot",
+            legs: 4,
+            color: "orange",
+            playful: false
+        };
+        console.log(cat["name"]); // bracket notation
+        console.log(dog.name); // dote notation access to the object values
+        console.log(Object.keys(dog));
+        console.log(Object.values(dog));
+
+        var myObject = {}; // empty object
+        myObject['heavy'] = false;
+        myObject['color'] = 'purple';
+        myObject['matter'] = 'liquid';
+        myObject.name = "Frank";
+
+        var food = {};
+        food.veggie = 'carrot';
+        food.fruit = 'strawberry';
+        food.meat = 'chicken';
+
+        var dinosaurs = [
+            { name: 'T-rex', period: 'Jurassic', netaEater: true},
+            { name: 'Stegosaurus', period: 'Triasic', meatEter: false},
+            { name: 'Pterodactyl', period: 'Cretacious', meatEater: true}
+        ];
+        // access arrays with objects
+        console.log(dinosaurs[0]); // {name: "T-rex", period: "Jurassic", netaEater: true}
+        console.log(dinosaurs[0]['meatEater']); // true
+        console.log(dinosaurs[0].name); // "T-rex"
+
+        var students = []; // createing an empty array
+        var Andy = { name: 'Andy', level: 'advanced', luckyNums: [444, 13, 7]};
+        var Elizabeth = { name: 'Elizabeth', level: 'intermediate', luckyNums: [1, 5,8]};
+        var Jeremy = { name: 'Jeremy', level: 'beginners', luckyNums: [12, 16,3,17]};
+        students = [Andy, Elizabeth, Jeremy]; // assign the variables to the students array
+     
+        console.log(students[2]); //{name: "Jeremy", level: "beginners", luckyNums: Array(4)}
+        console.log(students[2].name); //"Jeremy"
+        console.log(students[0].luckyNums[0]); //444
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>

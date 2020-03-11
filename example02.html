@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+
+    <script>
+       var MoneyOwed = {};
+       MoneyOwed['Jim'] = 5;
+       MoneyOwed['Sara'] = 9;
+       MoneyOwed['Celene'] = 2;
+
+       // Jim borrows $4 more
+       MoneyOwed.Jim += 4;
+       console.log(MoneyOwed.Jim);
+
+       // movies collection: name, length, release date, stars, format, awards, rating. We make object of objects
+       var Movies = {
+           'Fish People': {
+               length: 100,
+               released: 2018,
+               stars: ['Nemo', 'Kimi Wener', 'Charles'],
+               format: 'DVD',
+               awards: "ShellTastic",
+               rating: 5
+           },
+           'Stars Wars': {
+               length: 130,
+               released: 1975,
+               stars: ['Carrie Fish', 'Mark Hammel', 'Harrison Ford'],
+               format: 'Beta',
+               awards: "Oscar Nominator",
+               rating: 5
+           },
+           'From Here to Eternity': {
+               length: 90,
+               released: 1951,
+               stars: ['Gregory Peck', 'That lady', 'Burt Landcaster'],
+               format: 'Primitive',
+               awards: "Oscar, Best picture",
+               rating: 5
+           }
+       };
+       var Cars = {
+               length: 70,
+               released: 2016,
+               stars: ['Lighting MCQueen', 'Mater'],
+               format: 'Streaming',
+               awards: "none",
+               rating: 3
+       };
+
+       // insert new object to the Movies
+       Movies['Cars Move'] = Cars;
+
+       console.log(Movies["Fish People"]["length"]); //100
+       console.log(Movies['Stars Wars']. stars);
+       console.log(Movies.Cars);
+       console.log(Object.keys(Movies));
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+</html>
