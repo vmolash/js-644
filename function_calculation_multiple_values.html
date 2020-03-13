@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Interior Design Specialists</h1>
+    <div id="message">Welcome to our site.</div>
+
+    <script>
+        function getSize(width, height, depth) {
+            var area = width * height;
+            var volume = width * height * depth;
+            var sizes = [area, volume];
+            return sizes;
+        }
+        var one = getSize(3,2,3);
+        var areaOne = getSize(3,2,3)[0];
+        var volumeOne = getSize(3,2,3)[1];
+
+        alert(one + ': ' + areaOne + ', ' + volumeOne);
+    </script>
+</body>
+</html>
