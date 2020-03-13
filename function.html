@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Dihcro Orchid Farms</h1>
+    <div id="message">Welcome to our site.</div>
+
+    <script>
+        var msg = 'Sign up to receive our newsletter for 10% off!';
+        function updateMessage() {
+            var el = document.getElementById('message');
+            el.textContent = msg;
+        }
+        //updateMessage();
+        setTimeout(updateMessage,  3000);
+    </script>
+</body>
+</html>
