@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function example</title>
+</head>
+<body>
+    <h1>Beech View Hotel</h1>
+    <h2>hotel availability</h2>
+    <p>Location: <span id="hotellName"></span></p>
+    <div id="availability">
+        <p>rooms left: <span id="rooms"></span></p>
+    </div>
+
+    <script>
+        // Set up the object
+        var hotel ={
+            name: 'Beech view - North',
+            rooms: 30,
+            booked: 22,
+            checkAvailability: function() {
+                return this.rooms - this.booked; // Need "this" because inside function
+            }
+        };
+
+        // Update the HTML
+        var elName = document.getElementById('hotelName'); // Get element
+        elName.textContent = hotel.name; // Update HTML with property of the object
+
+        var elRooms = document.getElementById('rooms'); // Get element
+        elRooms.textContent = hotel.checkAvailability(); // Update HTML with property of the object
+    
+    </script>
+</body>
+</html>
