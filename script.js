@@ -135,3 +135,59 @@
 // var arr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
 // console.log(arr);
 
+// Assignment 2
+// STEP 1
+// var name = prompt('Please, enter your Name');
+// alert('The length of ' + name + ' is ' + name.length);
+
+// STEP 2
+// var name = prompt('Please, enter your Name');
+// var num = prompt('Please, enter a numeric value from 1 to ' + name.length);
+// alert(name[num-1]);
+
+// STEP 3
+// var firstName = prompt('Please, enter your First Name');
+// var lastName = prompt('Please, enter your Last Name');
+// alert('Your name is: ' + firstName + ' ' + lastName);
+
+// STEP 4
+// var str = 'The quick brown fox jumps over the lazy dog';
+// alert('The index of word "fox" starts from ' + str.indexOf('fox'));
+
+// STEP 5
+// var str = 'The quick brown fox jumps over the lazy fox';
+// var word = 'fox';
+// var indexOfFirst = str.indexOf(word);
+// alert('The index of the last instance of the word "fox" is ' + str.indexOf(word,(indexOfFirst + 1)));
+
+// STEP 6 ?????
+// 1 way
+// var str = 'The quick brown fox jumped over the lazy dog';
+// var name = prompt('Please, enter your full name');
+// var newStr = str.replace('the lazy dog', name);
+// alert(newStr);
+
+// STEP 7
+// var str = 'The quick brown fox jumps over the lazy dog';
+// var word = prompt('Please, enter a word');
+// if ( str.indexOf(word) !== -1) {
+//     alert(word + ' was found in the string');
+// } else {
+//     alert(word + " wasn't found in the string");
+// }
+
+// STEP 8
+// var old_string = 'The quick brown fox jumps over the lazy dog';
+// var new_string = old_string.substring(old_string.indexOf('the lazy dog'));
+// alert(new_string.toUpperCase());
+
+// STEP 9
+// var str = ' THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG          ';
+// var newStr = str.trim();
+// alert(newStr.toLowerCase());
+
+// STEP 10
+// var str = 'the quick brown fox jumps over the lazy dog';
+// var newStr = str[0].toUpperCase() + str.slice(1);
+// alert(newStr);
+
